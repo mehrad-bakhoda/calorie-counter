@@ -16,7 +16,6 @@
 
 
 
-
 .card {
   margin: 0.5rem;
   padding: 1.5rem;
@@ -31,7 +30,7 @@
   margin: 0.5rem;
 
   padding: 0.4rem;
-  width:90%;
+  width:95%;
   color: inherit;
   text-decoration: none;
   border: 2px solid black;
@@ -46,11 +45,14 @@
   border-color: #0070f3;
 }
 
-
+@media (max-width: 1065px) {
+  .card>input {
+    width: 90%;
+  }
+}
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .card>input {
+    width: 85%;
   }
 }
